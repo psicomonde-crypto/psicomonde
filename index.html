@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>psico.monde | Bienestar y Podcast</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-50 text-slate-900 font-sans">
+
+    <a href="https://wa.me/TU_NUMERO" class="fixed bottom-6 right-6 bg-rose-600 text-white px-6 py-4 rounded-full shadow-2xl z-50 flex items-center gap-3 hover:scale-105 transition-transform font-bold border-2 border-white">
+        <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-300 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-rose-100"></span></span>
+        ASISTENCIA URGENTE
+    </a>
+
+    <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b">
+        <div class="text-xl font-black tracking-tighter">psico.monde</div>
+        <div class="hidden md:flex gap-6 text-sm font-medium">
+            <a href="#podcast" class="hover:text-blue-600">Podcast</a>
+            <a href="#sesion" class="bg-slate-900 text-white px-5 py-2 rounded-full">Pedir Sesión</a>
+        </div>
+    </nav>
+
+    <header class="max-w-4xl mx-auto px-6 py-24 text-center">
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-6 tracking-tight">Tu mente merece un <span class="text-blue-600">lugar seguro.</span></h1>
+        <p class="text-xl text-slate-600 mb-10">Podcast, herramientas de salud mental y acompañamiento profesional.</p>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-8 mb-24">
+        <div id="podcast" class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
+            <h2 class="text-2xl font-bold mb-6 italic text-slate-400">Escuchar Podcast</h2>
+            <div class="aspect-square bg-slate-100 rounded-xl flex items-center justify-center border-2 border-dashed border-slate-200">
+                <p class="text-slate-400 text-sm p-8 text-center">Pega aquí el código "Embed" de tu Spotify for Podcasters</p>
+            </div>
+        </div>
+
+        <div id="sesion" class="bg-white p-8 rounded-3xl shadow-xl border border-blue-50">
+            <h2 class="text-2xl font-bold mb-2">Comienza tu proceso</h2>
+            <p class="text-slate-500 mb-6 text-sm">Responde brevemente para agendar tu primera sesión.</p>
+            <form class="space-y-4">
+                <input type="text" placeholder="Tu nombre" class="w-full p-4 bg-slate-50 border rounded-2xl outline-none focus:ring-2 focus:ring-blue-500">
+                <select class="w-full p-4 bg-slate-50 border rounded-2xl outline-none focus:ring-2 focus:ring-blue-500">
+                    <option>Motivo: Ansiedad / Estrés</option>
+                    <option>Motivo: Relaciones</option>
+                    <option>Motivo: Desarrollo personal</option>
+                </select>
+                <button type="button" class="w-full bg-blue-600 text-white font-bold py-4 rounded-2xl hover:bg-blue-700 shadow-lg shadow-blue-100">Enviar Solicitud</button>
+            </form>
+        </div>
+    </main>
+
+</body>
+</html>
