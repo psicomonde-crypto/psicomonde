@@ -12,6 +12,8 @@
             background-image: radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 1px);
             background-size: 50px 50px;
         }
+        /* Ajuste para que los embeds de Instagram no se vean gigantes */
+        .instagram-media { min-width: auto !important; width: 100% !important; margin: 0 auto !important; }
     </style>
 </head>
 <body class="text-slate-900 scroll-smooth relative min-h-screen">
@@ -20,31 +22,32 @@
 
     <a href="https://wa.me/5491164492603?text=Hola!%20Necesito%20asistencia%20psicológica%20urgente" 
        target="_blank"
-       class="fixed bottom-6 right-6 bg-red-700 text-white px-6 py-4 rounded-full shadow-2xl z-50 flex items-center gap-3 hover:scale-110 transition-all font-bold border-2 border-white text-sm">
+       class="fixed bottom-6 right-6 bg-red-700 text-white px-6 py-4 rounded-full shadow-2xl z-50 flex items-center gap-3 hover:scale-110 transition-all font-bold border-2 border-white text-xs tracking-widest uppercase">
         ASISTENCIA URGENTE
     </a>
 
     <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-purple-100 shadow-sm">
         <div class="text-2xl font-black tracking-tighter text-purple-900 uppercase">psico<span class="text-purple-600">.monde</span></div>
-        <div class="hidden md:flex gap-6 text-sm font-bold text-purple-800 uppercase tracking-widest">
+        <div class="hidden md:flex gap-6 text-sm font-bold text-purple-800 uppercase tracking-widest text-xs">
+            <a href="#comunidad" class="hover:text-purple-500">Instagram</a>
             <a href="#podcast" class="hover:text-purple-500">Podcast</a>
             <a href="#pagos" class="hover:text-purple-500">Pagos</a>
             <a href="#sesion" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition shadow-md">Pedir Sesión</a>
         </div>
     </nav>
 
-    <main class="relative z-10 max-w-5xl mx-auto px-6 py-16 space-y-20">
+    <main class="relative z-10 max-w-6xl mx-auto px-6 py-16 space-y-24">
         
-        <section class="text-center space-y-12">
-            <h1 class="text-5xl font-extrabold tracking-tighter text-purple-950 uppercase">Quiénes Somos</h1>
+        <section class="space-y-12">
+            <h1 class="text-5xl font-extrabold tracking-tighter text-purple-950 uppercase text-center">Quiénes Somos</h1>
             
             <div class="grid md:grid-cols-2 gap-10 items-start">
                 <div class="space-y-6">
-                    <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] mb-6">
+                    <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] mb-6 shadow-purple-200">
                         <img src="https://i.ibb.co/019WTy0/Whats-App-Image-2026-03-26-at-8-59-16-AM-1.jpg" alt="Meli Viscovich" class="w-full h-full object-cover">
                     </div>
                     <div class="text-left bg-white/60 backdrop-blur-sm p-8 rounded-[2rem] border border-white shadow-sm space-y-5">
-                        <h3 class="text-2xl font-bold text-purple-900">Meli Viscovich</h3>
+                        <h3 class="text-2xl font-bold text-purple-900 uppercase tracking-tighter">Meli Viscovich</h3>
                         <p class="text-purple-800 leading-relaxed italic">
                             Soy una mezcla de intensidades. Me encontrás corriendo, haciendo <b>CrossFit</b> o en cualquier deporte que me lleve al límite; asumo y abrazo esa personalidad vibrante. 
                         </p>
@@ -58,7 +61,7 @@
                 </div>
 
                 <div class="space-y-6">
-                    <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5]">
+                    <div class="rounded-[2rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] shadow-purple-200">
                         <img src="https://i.ibb.co/JjV5K9r6/Whats-App-Image-2026-03-26-at-8-59-16-AM.jpg" alt="Co-terapeuta felino" class="w-full h-full object-cover">
                     </div>
                     <div class="bg-emerald-50/50 p-6 rounded-[2rem] border border-emerald-100 text-center">
@@ -68,37 +71,58 @@
             </div>
         </section>
 
+        <section id="comunidad" class="space-y-10">
+            <div class="text-center">
+                <h2 class="text-3xl font-extrabold text-purple-950 uppercase tracking-tighter">Comunidad & Reflexiones</h2>
+                <p class="text-purple-600 font-medium">Lo que comparto día a día en @psico.monde</p>
+            </div>
+            
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-white border border-purple-100">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DLa2CHlSbX3/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-white border border-purple-100">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/DL3eedytOxK/" data-instgrm-version="14"></blockquote>
+                </div>
+                <div class="rounded-3xl overflow-hidden shadow-lg bg-white border border-purple-100">
+                    <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/reel/DLVaJ1ly-_h/" data-instgrm-version="14"></blockquote>
+                </div>
+            </div>
+            <script async src="//www.instagram.com/embed.js"></script>
+        </section>
+
         <section id="pagos" class="grid md:grid-cols-2 gap-8 items-stretch">
             <div id="podcast" class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-purple-100 space-y-4">
                 <h2 class="text-2xl font-bold text-purple-950 italic text-center">Último Podcast</h2>
-                <iframe style="border-radius:12px" src="http://googleusercontent.com/spotify.com/9" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                <iframe style="border-radius:12px" src="https://open.spotify.com/embed/show/TU_ID_AQUÍ?utm_source=generator&theme=00" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
             </div>
 
-            <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-purple-100 flex flex-col justify-center items-center text-center space-y-6">
+            <div class="bg-white p-8 rounded-[2.5rem] shadow-xl border border-purple-100 flex flex-col justify-center items-center text-center space-y-8">
                 <div class="text-5xl">💳</div>
                 <h2 class="text-2xl font-bold text-purple-950 uppercase tracking-tighter">Sesiones & Apoyo</h2>
-                <a href="https://link.mercadopago.com.ar/psicomonde" target="_blank" class="w-full bg-[#009EE3] text-white px-6 py-5 rounded-2xl font-black text-lg hover:scale-105 transition-transform shadow-lg">
-                    PAGAR CON MERCADO PAGO
+                <p class="text-purple-800 text-sm italic">Abona de forma rápida y segura por aquí:</p>
+                <a href="https://link.mercadopago.com.ar/psicomonde" target="_blank" class="w-full bg-[#009EE3] text-white px-6 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-lg uppercase">
+                    Mercado Pago
                 </a>
-                <p class="text-[10px] text-purple-300 uppercase font-bold">Melina Viscovich • Salta, Argentina</p>
+                <p class="text-[10px] text-purple-300 uppercase font-bold tracking-widest">Melina Viscovich • Salta, Argentina</p>
             </div>
         </section>
 
-        <section id="sesion" class="bg-purple-900 p-10 rounded-[3rem] shadow-2xl text-white">
-            <div class="max-w-md mx-auto space-y-6 text-center">
-                <h2 class="text-4xl font-extrabold tracking-tight uppercase">Contacto</h2>
+        <section id="sesion" class="bg-purple-900 p-12 rounded-[3.5rem] shadow-2xl text-white">
+            <div class="max-w-md mx-auto space-y-8 text-center">
+                <h2 class="text-4xl font-extrabold tracking-tight uppercase">¿Charlamos?</h2>
                 <form action="https://formspree.io/f/xvzvonpd" method="POST" class="space-y-4 text-left">
                     <input type="text" name="nombre" required class="w-full p-4 rounded-2xl bg-purple-800 border-none text-white outline-none focus:ring-2 focus:ring-purple-400" placeholder="Nombre completo">
                     <input type="tel" name="whatsapp" required class="w-full p-4 rounded-2xl bg-purple-800 border-none text-white outline-none focus:ring-2 focus:ring-purple-400" placeholder="WhatsApp">
-                    <textarea name="mensaje" rows="3" required class="w-full p-4 rounded-2xl bg-purple-800 border-none text-white outline-none focus:ring-2 focus:ring-purple-400" placeholder="¿Por qué buscás terapia hoy?"></textarea>
-                    <button type="submit" class="w-full bg-white text-purple-900 font-black py-5 rounded-2xl hover:bg-purple-100 transition shadow-xl text-lg uppercase">Enviar Solicitud ✨</button>
+                    <textarea name="mensaje" rows="3" required class="w-full p-4 rounded-2xl bg-purple-800 border-none text-white outline-none focus:ring-2 focus:ring-purple-400" placeholder="¿Cómo puedo acompañarte hoy?"></textarea>
+                    <button type="submit" class="w-full bg-white text-purple-900 font-black py-5 rounded-3xl hover:bg-purple-100 transition shadow-xl text-lg uppercase tracking-wider">Enviar Solicitud ✨</button>
                 </form>
             </div>
         </section>
 
     </main>
 
-    <footer class="py-12 text-center text-purple-400 text-xs tracking-widest uppercase">
+    <footer class="py-12 text-center text-purple-400 text-[10px] tracking-[0.3em] uppercase">
         © 2026 psico.monde — Salud Mental Consciente 🐾
     </footer>
 
