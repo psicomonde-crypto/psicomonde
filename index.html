@@ -3,48 +3,98 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>psico.monde | Bienestar</title>
+    <title>psico.monde | Bienestar Mental</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <style>body { font-family: 'Inter', sans-serif; }</style>
 </head>
-<body class="bg-slate-50 text-slate-900">
+<body class="bg-[#F8FAFC] text-slate-900 scroll-smooth">
 
-    <a href="https://wa.me/TU_NUMERO" class="fixed bottom-6 right-6 bg-rose-600 text-white px-6 py-4 rounded-full shadow-2xl z-50 flex items-center gap-3 hover:scale-105 transition-transform font-bold border-2 border-white">
-        <span class="relative flex h-3 w-3"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-rose-300 opacity-75"></span><span class="relative inline-flex rounded-full h-3 w-3 bg-rose-100"></span></span>
+    <a href="https://wa.me/5491164492603?text=Hola!%20Necesito%20asistencia%20psicológica%20urgente" 
+       target="_blank"
+       class="fixed bottom-6 right-6 bg-red-600 text-white px-6 py-4 rounded-full shadow-2xl z-50 flex items-center gap-3 hover:scale-110 transition-all font-bold border-2 border-white">
+        <span class="relative flex h-3 w-3">
+            <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-300 opacity-75"></span>
+            <span class="relative inline-flex rounded-full h-3 w-3 bg-white"></span>
+        </span>
         ASISTENCIA URGENTE
     </a>
 
-    <nav class="flex justify-between items-center p-6 bg-white border-b sticky top-0 z-40">
-        <div class="text-xl font-black tracking-tighter">psico.monde</div>
-        <div class="flex gap-4">
-            <a href="#sesion" class="bg-slate-900 text-white px-5 py-2 rounded-full text-sm font-bold">Pedir Sesión</a>
+    <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-slate-100">
+        <div class="text-2xl font-black tracking-tighter text-slate-900">psico<span class="text-blue-600">.monde</span></div>
+        <div class="hidden md:flex gap-8 text-sm font-semibold text-slate-600 uppercase tracking-widest">
+            <a href="#podcast" class="hover:text-blue-600 transition">Podcast</a>
+            <a href="#insta" class="hover:text-blue-600 transition">Comunidad</a>
+            <a href="#sesion" class="bg-blue-600 text-white px-6 py-2 rounded-full hover:bg-blue-700 transition shadow-md shadow-blue-100">Pedir Sesión</a>
         </div>
     </nav>
 
-    <header class="max-w-4xl mx-auto px-6 py-20 text-center">
-        <h1 class="text-5xl font-extrabold mb-6 tracking-tight text-slate-900">Tu bienestar mental en el <span class="text-blue-600">mundo digital.</span></h1>
-        <p class="text-lg text-slate-600 mb-10">Podcast semanal, contenido diario y acompañamiento profesional.</p>
+    <header class="max-w-5xl mx-auto px-6 py-24 text-center">
+        <div class="inline-block px-4 py-1.5 mb-6 text-xs font-bold tracking-widest text-blue-700 uppercase bg-blue-50 rounded-full">Espacio de Salud Mental</div>
+        <h1 class="text-5xl md:text-7xl font-extrabold mb-8 tracking-tight leading-[1.1]">Tu mente necesita un <span class="text-blue-600">refugio seguro.</span></h1>
+        <p class="text-xl text-slate-500 max-w-2xl mx-auto mb-12 leading-relaxed">Acompañamiento profesional, herramientas diarias y reflexiones en voz alta para tu bienestar.</p>
+        <div class="flex flex-col md:flex-row justify-center gap-4">
+            <a href="#sesion" class="bg-slate-900 text-white px-10 py-5 rounded-2xl font-bold text-lg hover:bg-slate-800 transition shadow-xl">Agendar Consulta</a>
+            <a href="https://cafecito.app/meli.visco" target="_blank" class="bg-orange-100 text-orange-700 px-10 py-5 rounded-2xl font-bold text-lg hover:bg-orange-200 transition flex items-center justify-center gap-2">
+                ☕ Invítame un Cafecito
+            </a>
+        </div>
     </header>
 
-    <main class="max-w-4xl mx-auto px-6 grid md:grid-cols-2 gap-8 pb-24">
-        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-100">
-            <h2 class="text-xl font-bold mb-4">Último Podcast</h2>
-            <div class="aspect-video bg-slate-100 rounded-xl flex items-center justify-center text-slate-400 text-sm italic">
-                Carga tu episodio de Spotify aquí
+    <section class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-12 pb-24">
+        
+        <div id="podcast" class="space-y-6">
+            <h2 class="text-3xl font-bold tracking-tight italic text-slate-400">#Podcast</h2>
+            <div class="bg-white p-4 rounded-[2rem] shadow-sm border border-slate-100">
+                <div class="aspect-video bg-slate-50 rounded-2xl flex items-center justify-center border-2 border-dashed border-slate-200 text-slate-400 text-center p-8">
+                    <p>Aquí aparecerán tus episodios de Spotify<br><span class="text-xs font-mono">ID: psico.monde.podcast</span></p>
+                </div>
             </div>
         </div>
 
-        <div id="sesion" class="bg-white p-8 rounded-3xl shadow-xl border border-blue-50">
-            <h2 class="text-xl font-bold mb-4 text-blue-900">Solicitar Sesión</h2>
+        <div id="insta" class="space-y-6">
+            <div class="flex justify-between items-end">
+                <h2 class="text-3xl font-bold tracking-tight italic text-slate-400">#Comunidad</h2>
+                <a href="https://instagram.com/psico.monde" target="_blank" class="text-blue-600 font-bold text-sm">@psico.monde</a>
+            </div>
+            <div class="grid grid-cols-2 gap-4">
+                <div class="aspect-square bg-slate-200 rounded-3xl animate-pulse"></div>
+                <div class="aspect-square bg-slate-200 rounded-3xl animate-pulse"></div>
+                <div class="aspect-square bg-slate-200 rounded-3xl animate-pulse"></div>
+                <div class="aspect-square bg-slate-200 rounded-3xl animate-pulse"></div>
+            </div>
+        </div>
+
+    </section>
+
+    <section id="sesion" class="bg-slate-900 py-24 text-white">
+        <div class="max-w-xl mx-auto px-6">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4 tracking-tight">Comienza hoy</h2>
+                <p class="text-slate-400">Completa tus datos y me pondré en contacto contigo para coordinar una entrevista inicial.</p>
+            </div>
             <form class="space-y-4">
-                <input type="text" placeholder="Tu nombre" class="w-full p-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
-                <select class="w-full p-4 bg-slate-50 border rounded-xl outline-none focus:ring-2 focus:ring-blue-500">
-                    <option>¿Cómo te sientes hoy?</option>
-                    <option>Necesito hablar con alguien</option>
-                    <option>Busco terapia preventiva</option>
-                </select>
-                <button type="button" class="w-full bg-blue-600 text-white font-bold py-4 rounded-xl shadow-lg">Enviar</button>
+                <div class="grid grid-cols-1 gap-4">
+                    <input type="text" placeholder="Tu Nombre Completo" class="w-full p-4 bg-slate-800 border border-slate-700 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    <input type="tel" placeholder="Tu WhatsApp (con código de país)" class="w-full p-4 bg-slate-800 border border-slate-700 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition">
+                    <select class="w-full p-4 bg-slate-800 border border-slate-700 rounded-2xl focus:ring-2 focus:ring-blue-500 outline-none transition text-slate-400">
+                        <option>Motivo de consulta...</option>
+                        <option>Ansiedad / Estrés</option>
+                        <option>Duelos / Pérdidas</option>
+                        <option>Crecimiento Personal</option>
+                        <option>Urgencia Puntual</option>
+                    </select>
+                </div>
+                <button type="button" class="w-full bg-blue-600 text-white font-bold py-5 rounded-2xl hover:bg-blue-500 transition shadow-lg shadow-blue-900/20 text-lg">
+                    Enviar Solicitud
+                </button>
             </form>
         </div>
-    </main>
+    </section>
+
+    <footer class="py-10 text-center text-slate-400 text-xs tracking-widest uppercase">
+        © 2026 psico.monde — Salud Mental Consciente
+    </footer>
+
 </body>
 </html>
