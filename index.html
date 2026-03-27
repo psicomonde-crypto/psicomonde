@@ -7,6 +7,7 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
+        html { scroll-behavior: smooth; }
         body { font-family: 'Quicksand', sans-serif; background-color: #F3E8FF; }
         .stars-bg {
             background-image: radial-gradient(white, rgba(255,255,255,.2) 1px, transparent 1px);
@@ -15,7 +16,7 @@
         .instagram-media { min-width: auto !important; width: 100% !important; margin: 0 auto !important; }
     </style>
 </head>
-<body class="text-slate-900 scroll-smooth relative min-h-screen">
+<body class="text-slate-900 relative min-h-screen">
 
     <div class="stars-bg absolute inset-0 z-0 pointer-events-none opacity-50"></div>
 
@@ -27,34 +28,32 @@
 
     <nav class="flex justify-between items-center p-6 bg-white/80 backdrop-blur-md sticky top-0 z-40 border-b border-purple-100 shadow-sm">
         <div class="text-2xl font-black tracking-tighter text-purple-900 uppercase">psico<span class="text-purple-600">.monde</span></div>
-        <div class="hidden md:flex gap-6 text-sm font-bold text-purple-800 uppercase tracking-widest text-[10px]">
-            <a href="#quienes" class="hover:text-purple-500">Meli</a>
-            <a href="#comunidad" class="hover:text-purple-500">Instagram</a>
-            <a href="#podcast" class="hover:text-purple-500">Podcast</a>
-            <a href="#sesion" class="bg-purple-600 text-white px-6 py-2 rounded-full hover:bg-purple-700 transition shadow-md">Evolucionar</a>
+        <div class="hidden lg:flex gap-6 text-sm font-bold text-purple-800 uppercase tracking-widest text-[10px]">
+            <a href="#quienes" class="hover:text-purple-500 transition-colors">Quién soy</a>
+            <a href="#comunidad" class="hover:text-purple-500 transition-colors">Reflexiones</a>
+            <a href="#podcast" class="hover:text-purple-500 transition-colors">Podcast</a>
+            <a href="#pagos" class="hover:text-purple-500 transition-colors">Apoyo</a>
+            <a href="#sesion" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition shadow-md">Evolucionar</a>
         </div>
     </nav>
 
     <main class="relative z-10 max-w-6xl mx-auto px-6 py-16 space-y-24">
         
-        <section id="quienes" class="space-y-12 text-center">
+        <section id="quienes" class="space-y-12 text-center pt-4">
             <h1 class="text-5xl font-extrabold tracking-tighter text-purple-950 uppercase">Quiénes Somos</h1>
             
-            <div class="grid md:grid-cols-2 gap-10 items-start">
+            <div class="grid md:grid-cols-2 gap-10 items-start text-left">
                 <div class="space-y-6">
                     <div class="rounded-[2.5rem] overflow-hidden shadow-2xl border-4 border-white aspect-[4/5] mb-6 shadow-purple-200">
                         <img src="https://photos.psychologytoday.com/6e4012e7-dbc0-4153-9ba5-78757cfb5955/2/320x400.jpeg" alt="Meli Viscovich" class="w-full h-full object-cover">
                     </div>
-                    <div class="text-left bg-white/60 backdrop-blur-sm p-8 rounded-[2rem] border border-white shadow-sm space-y-5">
+                    <div class="bg-white/60 backdrop-blur-sm p-8 rounded-[2rem] border border-white shadow-sm space-y-5">
                         <h3 class="text-2xl font-bold text-purple-900 uppercase tracking-tighter italic">Meli Viscovich</h3>
                         <p class="text-purple-800 leading-relaxed italic">
                             Soy una mezcla de intensidades: mamá dedicada, apasionada del <b>CrossFit</b> y terapeuta real. Abrazo esa personalidad vibrante que me lleva al límite y la paciencia infinita de la crianza respetuosa.
                         </p>
                         <p class="text-purple-900 leading-relaxed">
                             Mi <b>enfoque es integrativo</b>: fusiono la Gestalt, el psicoanálisis y herramientas de respiración para desarmar mandatos y habitar el aquí y ahora sin tabúes.
-                        </p>
-                        <p class="text-purple-950 font-bold border-l-4 border-purple-600 pl-4 uppercase text-xs tracking-wider italic">
-                            Acompaño procesos de autodescubrimiento y empoderamiento sexual. ¿Charlamos? ✨
                         </p>
                     </div>
                 </div>
@@ -70,7 +69,7 @@
             </div>
         </section>
 
-        <section id="comunidad" class="space-y-10">
+        <section id="comunidad" class="space-y-10 pt-16">
             <div class="text-center">
                 <h2 class="text-3xl font-extrabold text-purple-950 uppercase tracking-tighter">Comunidad & Reflexiones</h2>
                 <p class="text-purple-600 font-medium italic">Un espacio compartido en @psico.monde</p>
@@ -89,33 +88,34 @@
             <script async src="//www.instagram.com/embed.js"></script>
         </section>
 
-        <section id="pagos" class="grid md:grid-cols-2 gap-8 items-stretch">
-            <div id="podcast" class="bg-white p-8 rounded-[3rem] shadow-xl border border-purple-100 space-y-4">
-                <div class="text-center">
-                    <p class="text-[10px] font-black text-purple-400 uppercase tracking-widest mb-2">Podcast Episodio #01</p>
-                    <h2 class="text-2xl font-bold text-purple-950 italic">Somos víctimas hasta que dejamos de serlo</h2>
+        <section id="podcast" class="pt-16">
+            <div class="grid md:grid-cols-2 gap-8 items-stretch">
+                <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-purple-100 space-y-6">
+                    <div class="text-center">
+                        <p class="text-[10px] font-black text-purple-400 uppercase tracking-widest mb-2">Episodio #01</p>
+                        <h2 class="text-2xl font-bold text-purple-950 italic">Somos víctimas hasta que dejamos de serlo</h2>
+                    </div>
+                    <div class="rounded-2xl overflow-hidden shadow-inner">
+                        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/episode/7?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
+                    </div>
                 </div>
-                <div class="rounded-2xl overflow-hidden shadow-inner bg-purple-50">
-                    <iframe style="border-radius:12px" src="http://googleusercontent.com/spotify.com/8" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-                </div>
-            </div>
 
-            <div class="bg-white p-8 rounded-[3rem] shadow-xl border border-purple-100 flex flex-col justify-center items-center text-center space-y-8 h-full min-h-[400px]">
-                <div class="text-6xl">💳</div>
-                <div class="space-y-4 px-4">
-                    <h2 class="text-3xl font-black text-purple-950 uppercase tracking-tighter">Sesiones & Apoyo</h2>
-                    <p class="text-purple-600 text-sm font-medium italic">
-                        ¿Te sirve el contenido y no querés o no podés iniciar el trabajo en ti pero te resuena? Apoyá psico.monde por aquí:
-                    </p>
+                <div id="pagos" class="bg-white p-8 rounded-[3rem] shadow-xl border border-purple-100 flex flex-col justify-center items-center text-center space-y-8 h-full min-h-[400px]">
+                    <div class="text-6xl">💳</div>
+                    <div class="space-y-4 px-4">
+                        <h2 class="text-3xl font-black text-purple-950 uppercase tracking-tighter">Apoyá mi trabajo</h2>
+                        <p class="text-purple-600 text-sm font-medium italic">
+                            ¿Te sirve el contenido y no querés o no podés iniciar el trabajo en ti pero te resuena? Apoyá psico.monde por aquí:
+                        </p>
+                    </div>
+                    <a href="https://link.mercadopago.com.ar/psicomonde" target="_blank" class="w-full bg-[#009EE3] text-white px-6 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-lg uppercase tracking-wider">
+                        Mercado Pago
+                    </a>
                 </div>
-                <a href="https://link.mercadopago.com.ar/psicomonde" target="_blank" class="w-full bg-[#009EE3] text-white px-6 py-6 rounded-2xl font-black text-xl hover:scale-105 transition-transform shadow-lg uppercase tracking-wider">
-                    Mercado Pago
-                </a>
-                <p class="text-[10px] text-purple-300 uppercase font-bold tracking-[0.2em]">Capital Federal, Buenos Aires</p>
             </div>
         </section>
 
-        <section id="sesion" class="bg-purple-900 p-12 rounded-[4rem] shadow-2xl text-white">
+        <section id="sesion" class="bg-purple-900 p-12 rounded-[4rem] shadow-2xl text-white mt-12">
             <div class="max-w-md mx-auto space-y-8 text-center">
                 <h2 class="text-4xl font-extrabold tracking-tight uppercase">Invertí en vos</h2>
                 <p class="text-purple-200 text-sm italic">Dejame tus datos para coordinar una entrevista inicial.</p>
@@ -134,6 +134,12 @@
     <footer class="py-16 text-center text-purple-400 text-[10px] tracking-[0.4em] uppercase">
         © 2026 psico.monde — Salud Mental Real 🐾
     </footer>
+
+    <script>
+        window.onload = function() {
+            window.scrollTo(0, 0);
+        };
+    </script>
 
 </body>
 </html>
