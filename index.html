@@ -33,6 +33,7 @@
             <a href="#comunidad" class="hover:text-purple-500 transition-colors">Reflexiones</a>
             <a href="#podcast" class="hover:text-purple-500 transition-colors">Podcast</a>
             <a href="#pagos" class="hover:text-purple-500 transition-colors">Apoyo</a>
+            <a href="#horarios" class="hover:text-purple-500 transition-colors">Horarios</a>
             <a href="#sesion" class="bg-purple-600 text-white px-4 py-2 rounded-full hover:bg-purple-700 transition shadow-md">Evolucionar</a>
         </div>
     </nav>
@@ -112,7 +113,22 @@
                     <a href="https://link.mercadopago.com.ar/psicomonde" target="_blank" class="w-auto inline-block bg-[#009EE3] text-white px-8 py-3 rounded-xl font-bold text-base hover:scale-105 transition-transform shadow-md uppercase tracking-wide">
                         Mercado Pago
                     </a>
-                    <p class="text-[10px] text-purple-300 uppercase font-bold tracking-[0.2em]">Capital Federal, Buenos Aires</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="horarios" class="bg-purple-950 p-10 rounded-[3rem] shadow-2xl mt-12 text-white">
+            <h2 class="text-3xl font-black uppercase tracking-tighter text-center mb-8">Horarios & Condiciones</h2>
+            <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
+                <div class="bg-purple-900 p-6 rounded-2xl border border-purple-800">
+                    <h3 class="font-bold text-purple-200 mb-2 uppercase text-sm tracking-widest">Atención Nocturna</h3>
+                    <p class="text-xl font-bold">Lunes a viernes</p>
+                    <p class="text-3xl font-black mt-1">20:00 a 23:00</p>
+                </div>
+                <div class="bg-purple-900 p-6 rounded-2xl border border-purple-800">
+                    <h3 class="font-bold text-purple-200 mb-2 uppercase text-sm tracking-widest">Admisión & Inversión</h3>
+                    <p class="text-sm">Todo proceso requiere una entrevista de admisión inicial.</p>
+                    <p class="text-2xl font-black mt-2">Valor sesión: $30.000</p>
                 </div>
             </div>
         </section>
@@ -138,13 +154,11 @@
     </footer>
 
     <script>
-        // Evita saltos automáticos al cargar
         window.onload = function() {
             if(!window.location.hash) {
                 window.scrollTo(0, 0);
             }
         };
     </script>
-
 </body>
 </html>
